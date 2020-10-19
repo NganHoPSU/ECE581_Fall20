@@ -1,0 +1,85 @@
+# Compile of problem5b.sv was successful.
+# Compile of tb_problem5b.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_problem5b
+# vsim -voptargs="+acc" work.tb_problem5b 
+# Start time: 22:36:10 on Oct 13,2020
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-31) Unable to unlink file "N:/Desktop/ECE 581/P1/work/@_opt2/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "N:/Desktop/ECE 581/P1/work/@_opt2/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "N:/Desktop/ECE 581/P1/work/@_opt2".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.tb_problem5b(fast)
+# Loading work.problem5b(fast)
+run -all
+# Test Gray code to Binary: 
+# 
+#                    0	 Gray: 000000 		 Binary: 000000
+#                    1	 Gray: 000001 		 Binary: 000001
+#                    2	 Gray: 000010 		 Binary: 000011
+#                    3	 Gray: 000011 		 Binary: 000010
+#                    4	 Gray: 000100 		 Binary: 000111
+#                    5	 Gray: 000101 		 Binary: 000110
+#                    6	 Gray: 000110 		 Binary: 000100
+#                    7	 Gray: 000111 		 Binary: 000101
+#                    8	 Gray: 001000 		 Binary: 001111
+#                    9	 Gray: 001001 		 Binary: 001110
+#                   10	 Gray: 001010 		 Binary: 001100
+#                   11	 Gray: 001011 		 Binary: 001101
+#                   12	 Gray: 001100 		 Binary: 001000
+#                   13	 Gray: 001101 		 Binary: 001001
+#                   14	 Gray: 001110 		 Binary: 001011
+#                   15	 Gray: 001111 		 Binary: 001010
+#                   16	 Gray: 010000 		 Binary: 011111
+#                   17	 Gray: 010001 		 Binary: 011110
+#                   18	 Gray: 010010 		 Binary: 011100
+#                   19	 Gray: 010011 		 Binary: 011101
+#                   20	 Gray: 010100 		 Binary: 011000
+#                   21	 Gray: 010101 		 Binary: 011001
+#                   22	 Gray: 010110 		 Binary: 011011
+#                   23	 Gray: 010111 		 Binary: 011010
+#                   24	 Gray: 011000 		 Binary: 010000
+#                   25	 Gray: 011001 		 Binary: 010001
+#                   26	 Gray: 011010 		 Binary: 010011
+#                   27	 Gray: 011011 		 Binary: 010010
+#                   28	 Gray: 011100 		 Binary: 010111
+#                   29	 Gray: 011101 		 Binary: 010110
+#                   30	 Gray: 011110 		 Binary: 010100
+#                   31	 Gray: 011111 		 Binary: 010101
+#                   32	 Gray: 100000 		 Binary: 111111
+#                   33	 Gray: 100001 		 Binary: 111110
+#                   34	 Gray: 100010 		 Binary: 111100
+#                   35	 Gray: 100011 		 Binary: 111101
+#                   36	 Gray: 100100 		 Binary: 111000
+#                   37	 Gray: 100101 		 Binary: 111001
+#                   38	 Gray: 100110 		 Binary: 111011
+#                   39	 Gray: 100111 		 Binary: 111010
+#                   40	 Gray: 101000 		 Binary: 110000
+#                   41	 Gray: 101001 		 Binary: 110001
+#                   42	 Gray: 101010 		 Binary: 110011
+#                   43	 Gray: 101011 		 Binary: 110010
+#                   44	 Gray: 101100 		 Binary: 110111
+#                   45	 Gray: 101101 		 Binary: 110110
+#                   46	 Gray: 101110 		 Binary: 110100
+#                   47	 Gray: 101111 		 Binary: 110101
+#                   48	 Gray: 110000 		 Binary: 100000
+#                   49	 Gray: 110001 		 Binary: 100001
+#                   50	 Gray: 110010 		 Binary: 100011
+#                   51	 Gray: 110011 		 Binary: 100010
+#                   52	 Gray: 110100 		 Binary: 100111
+#                   53	 Gray: 110101 		 Binary: 100110
+#                   54	 Gray: 110110 		 Binary: 100100
+#                   55	 Gray: 110111 		 Binary: 100101
+#                   56	 Gray: 111000 		 Binary: 101111
+#                   57	 Gray: 111001 		 Binary: 101110
+#                   58	 Gray: 111010 		 Binary: 101100
+#                   59	 Gray: 111011 		 Binary: 101101
+#                   60	 Gray: 111100 		 Binary: 101000
+#                   61	 Gray: 111101 		 Binary: 101001
+#                   62	 Gray: 111110 		 Binary: 101011
+#                   63	 Gray: 111111 		 Binary: 101010
+# ** Note: $stop    : N:/Desktop/ECE 581/P1/tb_problem5b.sv(30)
+#    Time: 69 ns  Iteration: 0  Instance: /tb_problem5b
+# Break in Module tb_problem5b at N:/Desktop/ECE 581/P1/tb_problem5b.sv line 30

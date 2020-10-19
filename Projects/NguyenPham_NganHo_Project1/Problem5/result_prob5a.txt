@@ -1,0 +1,80 @@
+# Compile of problem5a.sv was successful.
+# Compile of tb_problem5a.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_problem5a
+# vsim -voptargs="+acc" work.tb_problem5a 
+# Start time: 21:54:31 on Oct 13,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_problem5a(fast)
+# Loading work.problem5a(fast)
+run -all
+# Test for problem 5a:
+# 
+#                    0		 Binary: 000000 		 Gray: 000000
+#                    1		 Binary: 000001 		 Gray: 000001
+#                    2		 Binary: 000010 		 Gray: 000011
+#                    3		 Binary: 000011 		 Gray: 000010
+#                    4		 Binary: 000100 		 Gray: 000110
+#                    5		 Binary: 000101 		 Gray: 000111
+#                    6		 Binary: 000110 		 Gray: 000101
+#                    7		 Binary: 000111 		 Gray: 000100
+#                    8		 Binary: 001000 		 Gray: 001100
+#                    9		 Binary: 001001 		 Gray: 001101
+#                   10		 Binary: 001010 		 Gray: 001111
+#                   11		 Binary: 001011 		 Gray: 001110
+#                   12		 Binary: 001100 		 Gray: 001010
+#                   13		 Binary: 001101 		 Gray: 001011
+#                   14		 Binary: 001110 		 Gray: 001001
+#                   15		 Binary: 001111 		 Gray: 001000
+#                   16		 Binary: 010000 		 Gray: 011000
+#                   17		 Binary: 010001 		 Gray: 011001
+#                   18		 Binary: 010010 		 Gray: 011011
+#                   19		 Binary: 010011 		 Gray: 011010
+#                   20		 Binary: 010100 		 Gray: 011110
+#                   21		 Binary: 010101 		 Gray: 011111
+#                   22		 Binary: 010110 		 Gray: 011101
+#                   23		 Binary: 010111 		 Gray: 011100
+#                   24		 Binary: 011000 		 Gray: 010100
+#                   25		 Binary: 011001 		 Gray: 010101
+#                   26		 Binary: 011010 		 Gray: 010111
+#                   27		 Binary: 011011 		 Gray: 010110
+#                   28		 Binary: 011100 		 Gray: 010010
+#                   29		 Binary: 011101 		 Gray: 010011
+#                   30		 Binary: 011110 		 Gray: 010001
+#                   31		 Binary: 011111 		 Gray: 010000
+#                   32		 Binary: 100000 		 Gray: 110000
+#                   33		 Binary: 100001 		 Gray: 110001
+#                   34		 Binary: 100010 		 Gray: 110011
+#                   35		 Binary: 100011 		 Gray: 110010
+#                   36		 Binary: 100100 		 Gray: 110110
+#                   37		 Binary: 100101 		 Gray: 110111
+#                   38		 Binary: 100110 		 Gray: 110101
+#                   39		 Binary: 100111 		 Gray: 110100
+#                   40		 Binary: 101000 		 Gray: 111100
+#                   41		 Binary: 101001 		 Gray: 111101
+#                   42		 Binary: 101010 		 Gray: 111111
+#                   43		 Binary: 101011 		 Gray: 111110
+#                   44		 Binary: 101100 		 Gray: 111010
+#                   45		 Binary: 101101 		 Gray: 111011
+#                   46		 Binary: 101110 		 Gray: 111001
+#                   47		 Binary: 101111 		 Gray: 111000
+#                   48		 Binary: 110000 		 Gray: 101000
+#                   49		 Binary: 110001 		 Gray: 101001
+#                   50		 Binary: 110010 		 Gray: 101011
+#                   51		 Binary: 110011 		 Gray: 101010
+#                   52		 Binary: 110100 		 Gray: 101110
+#                   53		 Binary: 110101 		 Gray: 101111
+#                   54		 Binary: 110110 		 Gray: 101101
+#                   55		 Binary: 110111 		 Gray: 101100
+#                   56		 Binary: 111000 		 Gray: 100100
+#                   57		 Binary: 111001 		 Gray: 100101
+#                   58		 Binary: 111010 		 Gray: 100111
+#                   59		 Binary: 111011 		 Gray: 100110
+#                   60		 Binary: 111100 		 Gray: 100010
+#                   61		 Binary: 111101 		 Gray: 100011
+#                   62		 Binary: 111110 		 Gray: 100001
+#                   63		 Binary: 111111 		 Gray: 100000
+# ** Note: $stop    : N:/Desktop/ECE 581/P1/tb_problem5a.sv(29)
+#    Time: 69 ns  Iteration: 0  Instance: /tb_problem5a
+# Break in Module tb_problem5a at N:/Desktop/ECE 581/P1/tb_problem5a.sv line 29

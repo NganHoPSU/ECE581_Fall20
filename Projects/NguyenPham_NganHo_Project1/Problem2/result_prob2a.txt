@@ -1,0 +1,37 @@
+# Compile of problem2a.sv was successful.
+# Compile of tb_problem2a.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_problem2a
+# vsim -voptargs="+acc" work.tb_problem2a 
+# Start time: 22:56:42 on Oct 14,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_problem2a(fast)
+# Loading work.problem2a(fast)
+run -all
+# Test for problem 2b:
+# 
+# 
+#                    0	 input: 00000000 	 output: xxx
+#                    5	 input: 00000001 	 output: 000
+#                   10	 input: 00000010 	 output: 001
+#                   15	 input: 00000100 	 output: 010
+#                   20	 input: 00001000 	 output: 011
+#                   25	 input: 00010000 	 output: 100
+#                   30	 input: 00100000 	 output: 101
+#                   35	 input: 01000000 	 output: 110
+#                   40	 input: 10000000 	 output: 111
+# Test random cases:
+#                   45	 input: 11zx1111 	 output: 111
+#                   50	 input: z01z0x10 	 output: xxx
+#                   55	 input: 01zxzx1z 	 output: 110
+#                   60	 input: 11zxxzx1 	 output: 111
+#                   65	 input: 00zxz0z1 	 output: xxx
+#                   70	 input: x101z101 	 output: xxx
+#                   75	 input: 0x100x10 	 output: xxx
+#                   80	 input: 000zz100 	 output: xxx
+#                   85	 input: 0x1z0xzx 	 output: xxx
+#                   90	 input: z100101z 	 output: xxx
+# ** Note: $stop    : N:/Desktop/ECE 581/P1/tb_problem2a.sv(44)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_problem2a
+# Break in Module tb_problem2a at N:/Desktop/ECE 581/P1/tb_problem2a.sv line 44
